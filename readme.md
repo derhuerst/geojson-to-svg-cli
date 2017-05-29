@@ -1,5 +1,7 @@
 # geojson-to-svg-cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/derhuerst/geojson-to-svg-cli.svg)](https://greenkeeper.io/)
+
 **Command line tool to convert GeoJSON to SVG.**
 
 [![npm version](https://img.shields.io/npm/v/geojson-to-svg-cli.svg)](https://www.npmjs.com/package/geojson-to-svg-cli)

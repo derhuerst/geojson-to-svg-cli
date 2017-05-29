@@ -25,6 +25,11 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"@turf/bbox": "^4.3.0",
+		"geojson-svgify": "^0.5.0",
+		"minimist": "^1.2.0",
+		"projections": "^1.0.0",
+		"virtual-dom-stringify": "^3.0.1"
 	},
 	"scripts": {
 		"test": "cat example.geo.json | ./cli.js >/dev/null",

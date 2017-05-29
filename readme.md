@@ -17,8 +17,14 @@ npm install derhuerst/geojson-to-svg-cli
 
 ## Usage
 
-```js
-todo
+```
+Usage:
+    geojson-to-svg [-p mercator]
+Options:
+    --projection  -p  Which projection to use. Default: mercator
+                      Refer to npmjs.com/projections for a list.
+Examples:
+    cat example.geo.json | geojson-to-svg -p lambert > example.svg
 ```
 
 

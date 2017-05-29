@@ -1,0 +1,33 @@
+{
+	"preferGlobal": true,
+	"name": "geojson-to-svg-cli",
+	"description": "Command line tool to convert GeoJSON to SVG.",
+	"version": "0.1.0",
+	"main": "cli.js",
+	"files": [
+		"cli.js"
+	],
+	"bin": {
+		"geojson-to-svg": "./cli.js"
+	},
+	"keywords": [
+		"geojson",
+		"svg",
+		"cli",
+		"convert"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/geojson-to-svg-cli",
+	"repository": "derhuerst/geojson-to-svg-cli",
+	"bugs": "https://github.com/derhuerst/geojson-to-svg-cli/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	},
+	"scripts": {
+		"test": "cat example.geo.json | ./cli.js >/dev/null",
+		"prepublishOnly": "npm test"
+	}
+}

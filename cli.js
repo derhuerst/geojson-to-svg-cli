@@ -4,7 +4,7 @@
 const mri = require('mri')
 const svgify = require('geojson-svgify')
 const projections = require('projections')
-const bbox = require('@turf/bbox')
+const bbox = require('@turf/bbox').default
 const h = require('virtual-hyperscript-svg')
 const toString = require('virtual-dom-stringify')
 

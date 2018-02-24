@@ -25,7 +25,7 @@
 		"node": ">=6"
 	},
 	"dependencies": {
-		"@turf/bbox": "^5.0.0",
+		"@turf/bbox": "^6.0.0",
 		"geojson-svgify": "^0.5.0",
 		"mri": "^1.1.0",
 		"projections": "^1.0.0",

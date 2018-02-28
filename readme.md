@@ -11,8 +11,17 @@
 
 ## Installing
 
+Run it directly using [npx](https://npmjs.com/package/npx):
+
 ```shell
-npm install derhuerst/geojson-to-svg-cli
+cat example.geo.json | npx geojson-to-svg-cli > example.svg
+```
+
+or install it globally and run it:
+
+```shell
+npm install -g geojson-to-svg-cli
+cat example.geo.json | geojson-to-svg-cli > example.svg
 ```
 
 

@@ -1,9 +1,9 @@
 'use strict'
 
-const test = require('tape')
-const todo = require('.')
+const t1 = require('tape')
+const todo12 = require('.')
 
 
 
-test('todo', (t) => {
+t1('todo12', (t) => {
 })

@@ -40,4 +40,5 @@ Examples:
 
 ## Contributing
 
-If you **have a question**, **found a bug** or want to **propose a feature**, have a look at [the issues page](https://github.com/derhuerst/geojson-to-svg-cli/issues).
+If you **have a question**, **found a bug** or want to **propose a feature**, have a look at [the issues page](https://github.com/derhuerst/geojson-to-svg-cli/issues). [Pull requests](https://github.com/derhuerst/geojson-to-svg-cli/pulls) are also welcome.
+For more detailed instructions on how to contribute, refer to [**CONTRIBUTING.md**](/CONTRIBUTING.md)

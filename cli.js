@@ -19,10 +19,11 @@ if (argv.help || argv.h) {
 Usage:
     geojson-to-svg [-p mercator]
 Options:
-    --projection  -p  Which projection to use. Default: mercator
-                      Refer to npmjs.com/projections for a list.
+	--projection  -p  Which projection to use. Default: mercator
+	Refer to npmjs.com/projections for a list.
+	--key-properties  -k  comma separated list of properties to add to the svg as data attributes.
 Examples:
-    cat example.geo.json | geojson-to-svg -p lambert > example.svg
+    cat example.geo.json | geojson-to-svg -p lambert -k GEN > example.svg
 \n`)
 	process.exit(0)
 }
@@ -46,6 +47,9 @@ const project = ([lon, lat]) => {
 	return [x, y]
 }
 
+const properties = argv['key-properties'] || argv.k || ''
+const propertiesArray = properties.split(',')
+
 // todo
 const styles = h('style', {}, `
 	.shape {
@@ -65,7 +69,25 @@ process.stdin
 		const geojson = JSON.parse(input)
 		const [west, south, east, north] = bbox(geojson)
 
-		const polylines = svgify(geojson, {projection: project})
+		const polylines = svgify(geojson, {
+			projection: project,
+			computeProps(feature) {
+				const {properties} = feature
+				const dataAttributes = Object.entries(properties).reduce((acc, entry) => {
+					const [key, value] = entry
+					if (!propertiesArray.includes(key)) return acc;
+
+					const dataKey = `data-${key.toLowerCase().replace('_', '-')}`
+					acc[dataKey] = value
+
+					return acc
+				}, {})
+				return {
+					className: 'shape',
+					...dataAttributes
+				}
+			}
+		})
 
 		const [left, top] = project([west, north])
 		const [right, bottom] = project([east, south])

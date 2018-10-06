@@ -82,10 +82,10 @@ process.stdin
 
 					return acc
 				}, {})
-				return {
-					className: 'shape',
-					...dataAttributes
-				}
+				return Object.assign({
+						className: 'shape'
+					},
+					dataAttributes)
 			}
 		})
 

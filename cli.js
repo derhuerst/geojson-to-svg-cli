@@ -74,8 +74,9 @@ process.stdin
 			projection: project,
 			computeProps(feature) {
 				const {properties} = feature
-				const dataAttributes = Object.entries(properties).reduce((acc, entry) => {
-					const [key, value] = entry
+				const propKeys = Object.keys(properties)
+				const dataAttributes = propKeys.reduce((acc, key) => {
+					const value = properties[key]
 					if (!propertiesArray.includes(key)) return acc;
 
 					const dataKey = `data-${key.toLowerCase()}`

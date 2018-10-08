@@ -19,9 +19,10 @@ if (argv.help || argv.h) {
 Usage:
     geojson-to-svg [-p mercator]
 Options:
-	--projection  -p  Which projection to use. Default: mercator
-	Refer to npmjs.com/projections for a list.
-	--key-properties  -k  comma separated list of properties to add to the svg as data attributes.
+	--projection  -p	Which projection to use. Default: mercator
+						Refer to npmjs.com/projections for a list.
+	--properties  -k	comma separated list of properties to add
+						to the svg as data attributes.
 Examples:
     cat example.geo.json | geojson-to-svg -p lambert -k GEN > example.svg
 \n`)
@@ -47,7 +48,7 @@ const project = ([lon, lat]) => {
 	return [x, y]
 }
 
-const properties = argv['key-properties'] || argv.k || ''
+const properties = argv['properties'] || argv.k || ''
 const propertiesArray = properties.split(',')
 
 // todo
@@ -82,10 +83,9 @@ process.stdin
 
 					return acc
 				}, {})
-				return Object.assign({
-						className: 'shape'
-					},
-					dataAttributes)
+
+				dataAttributes.className = 'shape';
+				return dataAttributes;
 			}
 		})
 

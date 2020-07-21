@@ -27,7 +27,7 @@
 	"dependencies": {
 		"@turf/bbox": "^6.0.1",
 		"geojson-svgify": "^0.5.0",
-		"mri": "^1.1.5",
+		"mri": "^1.1.6",
 		"projections": "^1.0.0",
 		"virtual-dom-stringify": "^3.0.1"
 	},

@@ -4,8 +4,9 @@
 
 [![npm version](https://img.shields.io/npm/v/geojson-to-svg-cli.svg)](https://www.npmjs.com/package/geojson-to-svg-cli)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/geojson-to-svg-cli.svg)
-[![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
-[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
+![minimum Node.js version](https://img.shields.io/node/v/geojson-to-svg-cli.svg)
+[![support me via GitHub Sponsors](https://img.shields.io/badge/support%20me-donate-fa7664.svg)](https://github.com/sponsors/derhuerst)
+[![chat with me via Matrix](https://img.shields.io/badge/chat%20with%20me-via%20Matrix-000000.svg)](https://matrix.to/#/@derhuerst:matrix.org)
 
 
 ## Installing

@@ -3,7 +3,6 @@
 **Command line tool to convert GeoJSON to SVG.**
 
 [![npm version](https://img.shields.io/npm/v/geojson-to-svg-cli.svg)](https://www.npmjs.com/package/geojson-to-svg-cli)
-[![build status](https://img.shields.io/travis/derhuerst/geojson-to-svg-cli.svg)](https://travis-ci.org/derhuerst/geojson-to-svg-cli)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/geojson-to-svg-cli.svg)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
 [![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
